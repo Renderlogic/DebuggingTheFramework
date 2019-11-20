@@ -100,34 +100,23 @@ mix.minify('resources/js/shared/staging/app.shared.js');
 mix.styles([
     'resources/css/shared/staging/app.shared.min.css',
     'resources/css/public/staging/app.public.min.css'
-], 'resources/css/public/staging/app.public.min.css');
+], 'app.public.min.css');  <-- mix AND copy here
 
 mix.styles([
     'resources/css/shared/staging/app.shared.min.css',
     'resources/css/private/staging/app.private.min.css'
-], 'resources/css/private/staging/app.private.min.css');
+], 'app.private.min.css');  <-- mix AND copy here
 
 mix.js([
     'resources/js/shared/staging/app.shared.min.js',
     'resources/js/public/staging/app.public.min.js'
-], 'resources/js/public/staging/renderlogic.public.min.js');
+], 'renderlogic.public.min.js');  <-- mix AND copy here
 
 mix.js([
     'resources/js/shared/staging/app.shared.min.js',
     'resources/js/private/staging/app.private.min.js'
-], 'resources/js/private/staging/renderlogic.private.min.js');
+], 'renderlogic.private.min.js'); <-- mix AND copy here
 
 
-
-/*
- * Deploy from resources to public 
- */
-/* css */
-mix.copy("resources/css/public/staging/app.public.min.css", "public/css/public/app.public.min.css");
-mix.copy("resources/css/private/staging/app.private.min.css", "public/css/private/app.private.min.css");
-mix.copy("resources/css/shared/staging/app.shared.min.css", "public/css/shared/app.shared.min.css");
-/* js */
-mix.copy("resources/js/public/staging/renderlogic.public.min.js", "public/js/public/renderlogic.public.min.js");
-mix.copy("resources/js/private/staging/renderlogic.private.min.js", "public/js/private/renderlogic.private.min.js");
-mix.copy("resources/js/shared/staging/app.shared.min.js", "public/js/shared/app.shared.min.js");
+// REMOVED REDUNDANT COPY METHOD AN ALL WAS GOOD.
 
