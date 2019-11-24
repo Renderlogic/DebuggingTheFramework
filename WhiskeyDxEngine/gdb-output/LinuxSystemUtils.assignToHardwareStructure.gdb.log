@@ -1,0 +1,5 @@
+Breakpoint 1, LinuxSystemUtils::assignToHardwareStructure (this=0x7fffffffd140) at usr/LinuxSystemUtils.cpp:131
+131	    int parsingTokenSize = this->cpu_info_tokens.size();
+this->cpu_info_tokens = $1 = std::map with 5 elements = {[0] = "processor", [1] = "physicalid", [2] = "siblings", [3] = "coreid", [4] = "cpucores"}
+this->unitPropertyCounts = $2 = {0, 0, 4, 0, 2, 1, 0, 4, 1, 2, 2, 0, 4, 0, 2, 3, 0, 4, 1, 2}
+pSystemMemAddress = $3 = (hardwareSystem *) 0x7fffffffd134
